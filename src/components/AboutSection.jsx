@@ -21,7 +21,7 @@ export const AboutSection =()=>{
                         </p>
                         <div className=" flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="#contact " className=" cosmic-button capitalize">Get in touch</a>
-                            <a href="/public/documents/ISMAIL MOUSLIH resume STD v1.2 wp.pdf" target="_blank" className=" cosmic-button-second capitalize">download CV</a>
+                            <a href="/documents/ISMAIL MOUSLIH resume STD v1.2 wp.pdf" target="_blank" className=" cosmic-button-second capitalize">download CV</a>
                         </div>
                     </div>
                     <div>
