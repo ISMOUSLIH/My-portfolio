@@ -78,15 +78,15 @@ export const ContactSection=()=>{
                         <div className="pt-8">
                             <h4 className="font-medium mb-4">Reach Me At </h4>
                             <div className="flex space-x-4 justify-center"> 
-                                <a href="">
+                                <a href="https://www.linkedin.com/in/ismail-mouslih/">
                                     <Linkedin/>
                                 </a>
-                                <a href="">
+                                {/* <a href="">
                                     <Instagram/>
                                 </a>
                                 <a href="">
                                     <Twitter/>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
