@@ -17,7 +17,7 @@ export const SkillsSection=()=>{
                     {categories.map((category ,index)=>
                     <div onClick={()=>setActiveCategory(category)}
                      key={index }
-                     className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize ",
+                     className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize cursor-pointer",
                         activeCategory===category? "bg-primary text-primary-foreground":"bg-secondary/70 text-foreground hover:bd"
                      )}>{category}</div>
                         )}
