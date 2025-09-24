@@ -5,9 +5,9 @@ import {  useState } from "react"
 
 export const ContactSection=()=>{
     const [isSubmitting,setIsSubmitting ]=useState(false)
-    const handleSend=(e)=>{
+    const handleSend=()=>{
         setIsSubmitting(true)
-        e.preventDefault()
+        // e.preventDefault()
         setTimeout(()=>{
             
             setIsSubmitting(false)
@@ -78,7 +78,7 @@ export const ContactSection=()=>{
                         <div className="pt-8">
                             <h4 className="font-medium mb-4">Reach Me At </h4>
                             <div className="flex space-x-4 justify-center"> 
-                                <a href="https://www.linkedin.com/in/ismail-mouslih/">
+                                <a href="https://www.linkedin.com/in/ismail-mouslih/" target="_blank">
                                     <Linkedin/>
                                 </a>
                                 {/* <a href="">
@@ -95,7 +95,7 @@ export const ContactSection=()=>{
                     <div className="bg-card p-8 rounded-lg shadow-xs">
                         <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
                         <form   
-                        action="https://formspree.io/f/mnngqkra"
+                        // action="https://formspree.io/f/mnngqkra"
                         method="POST"
                         className="space-y-6"
                         onSubmit={handleSend}>
