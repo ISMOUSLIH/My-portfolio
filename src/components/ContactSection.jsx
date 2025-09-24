@@ -5,9 +5,9 @@ import {  useState } from "react"
 
 export const ContactSection=()=>{
     const [isSubmitting,setIsSubmitting ]=useState(false)
-    const handleSend=()=>{
+    const handleSend=(e)=>{
         setIsSubmitting(true)
-        // e.preventDefault()
+        e.preventDefault()
         setTimeout(()=>{
             
             setIsSubmitting(false)
