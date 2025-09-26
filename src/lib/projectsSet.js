@@ -16,16 +16,16 @@ export const projects = [
     image: "/projects/My  movies library.png",
     tags: ["HTML", "CSS", "Java Script", "Local Storage"],
     demoUrl: "",
-    github_repo: "https://github.com/ismail/product-scraper",
+    github_repo: "https://github.com/ISMOUSLIH/My-movies-Library",
   },
 
-  {
-    id: 4,
-    title: "Jumia Order Tracker",
-    p_description: "",
-    image: "/projects/cortechslab maroc.png",
-    tags: ["Laravel", "MySql"],
-    demoUrl: null,
-    github_repo: null,
-  },
+  // {
+  //   id: 4,
+  //   title: "Jumia Order Tracker",
+  //   p_description: "",
+  //   image: "/projects/cortechslab maroc.png",
+  //   tags: ["Laravel", "MySql"],
+  //   demoUrl: null,
+  //   github_repo: null,
+  // },
 ];
