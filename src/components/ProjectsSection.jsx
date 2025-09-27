@@ -4,6 +4,7 @@ import { cn } from "../lib/utils"
 export const ProjectsSection=()=>{
     return(
         <section id="projects" className="py-24 px-4 relative">
+          
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
               Featurd <span className="text-primary"> Projects</span>
@@ -27,6 +28,9 @@ export const ProjectsSection=()=>{
                   </div>
                
                 <h3 className="text-xl font-semibold mb-1"> {project.title }</h3>
+                 
+                
+                 
                 <p className="text-muted-foreground text-sm mb-4">{project.p_description}</p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3 ">
@@ -48,6 +52,7 @@ export const ProjectsSection=()=>{
                 </div>
               </div>
               )}
+
             </div>
             <div className="text-center mt-12">
                 <a href="https://github.com/iSMOUSLIH" target="_blank" className="cosmic-button w-fit flex items-center mx-auto gap-2"> 

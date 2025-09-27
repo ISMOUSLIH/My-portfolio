@@ -104,7 +104,8 @@ export const skills = [
   {
     name: "Elementor",
     category: "cms",
-    image: "",
+    image: "/images/elementor logo.png",
+    // <a href="https://www.flaticon.com/free-icons/elementor" title="elementor icons">Elementor icons created by Freepik - Flaticon</a>
   },
 
   // DevOps / Tools

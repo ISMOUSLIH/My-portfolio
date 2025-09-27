@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "CortechsLab.ma laboratory fourniseur ",
-    p_description: "",
+    p_description: "website about the laboratory machines",
     image: "/projects/cortechslab maroc.png",
     tags: ["WordPress", "WooCommerce", "SEO", "PHP", "mailing", "cloudFlare "],
     demoUrl: "https://cortechslab.ma/",
