@@ -1,7 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://ismailmouslih.vercel.app/</loc>
-      <priority>1.0</priority>
-   </url>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <!-- Home -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/#about</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/#skills</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/#projects</loc>
+    <priority>0.9</priority>
+
+    <!-- Project Images -->
+    <image:image>
+      <image:loc>https://ismailmouslih.vercel.app/projects/coretechslab%20maroc.png</image:loc>
+      <image:caption>CoreTechsLab Maroc Project</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://ismailmouslih.vercel.app/projects/My%20movies%20library.png</image:loc>
+      <image:caption>My Movies Library Project</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/#contact</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Documents -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/documents/ismail_mouslih_ENG_resume_v4.2_DEV.pdf</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
