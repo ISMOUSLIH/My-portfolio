@@ -25,6 +25,12 @@ export const skills = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
+    name: "Next.js",
+    category: "Front-End",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
     name: "Bootstrap",
     category: "Front-End",
     image:
