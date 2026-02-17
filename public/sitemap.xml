@@ -1,26 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Main Page -->
+  <!-- Homepage -->
   <url>
     <loc>https://ismailmouslih.vercel.app/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>1.0</priority>
 
     <!-- Project Images -->
     <image:image>
       <image:loc>https://ismailmouslih.vercel.app/projects/cortechslab%20maroc.png</image:loc>
-      <image:caption>CoreTechsLab Maroc Project</image:caption>
+      <image:caption>CoreTechsLab Maroc Web Project</image:caption>
     </image:image>
 
     <image:image>
-      <image:loc>https://ismailmouslih.vercel.app/projects/My%20%20movies%20library.png</image:loc>
-      <image:caption>My Movies Library Project</image:caption>
+      <image:loc>https://ismailmouslih.vercel.app/projects/My%20movies%20library.png</image:loc>
+      <image:caption>My Movies Library Web Application</image:caption>
     </image:image>
+  </url>
+
+  <!-- Projects Section -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/#projects</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Skills Section -->
+  <url>
+    <loc>https://ismailmouslih.vercel.app/#skills</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.7</priority>
   </url>
 
   <!-- Resume PDF -->
   <url>
     <loc>https://ismailmouslih.vercel.app/documents/ismail_mouslih_eng_4.6.pdf</loc>
+    <lastmod>2026-02-17</lastmod>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

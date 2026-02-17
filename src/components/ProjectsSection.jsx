@@ -1,6 +1,6 @@
-import { ExternalLink, Github, ArrowRight } from "lucide-react"
-import { projects } from "../lib/projectsSet"
-import { cn } from "../lib/utils"
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { projects } from "../lib/projectsSet";
+import { cn } from "../lib/utils";
 
 export const ProjectsSection = () => {
   return (
@@ -23,7 +23,8 @@ export const ProjectsSection = () => {
                   src={project.image}
                   alt={`${project.title} - ${project.tags.join(", ")} project`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
                 />
               </div>
               <div className="p-6">
@@ -40,9 +41,7 @@ export const ProjectsSection = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-semibold mb-1">
-                  {project.title}
-                </h3>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
 
                 {/* Description */}
                 <p className="text-muted-foreground text-sm mb-4">
@@ -54,11 +53,12 @@ export const ProjectsSection = () => {
                   <div className="flex space-x-3">
                     {project.demoUrl && (
                       <a
+                        aria-label={`Live demo of ${project.title}`}
                         href={project.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={cn(
-                          "text-foreground/80 hover:text-primary transition-colors duration-300"
+                          "text-foreground/80 hover:text-primary transition-colors duration-300",
                         )}
                       >
                         <ExternalLink size={20} />
@@ -67,11 +67,12 @@ export const ProjectsSection = () => {
 
                     {project.github_repo && (
                       <a
+                        aria-label={`GitHub repository of ${project.title}`}
                         href={project.github_repo}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={cn(
-                          "text-foreground/80 hover:text-primary transition-colors duration-300"
+                          "text-foreground/80 hover:text-primary transition-colors duration-300",
                         )}
                       >
                         <Github size={20} />
@@ -82,25 +83,29 @@ export const ProjectsSection = () => {
               </div>
 
               {/* JSON-LD structured data for this project */}
-              <script type="application/ld+json" dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "CreativeWork",
-                  "name": project.title,
-                  "description": project.p_description,
-                  "url": project.demoUrl || "https://ismailmouslih.vercel.app",
-                  "image": `https://ismailmouslih.vercel.app${project.image}`,
-                  "creator": {
-                    "@type": "Person",
-                    "name": "Ismail Mouslih"
-                  },
-                  "keywords": project.tags.join(", "),
-                  "sameAs": [
-                    "https://github.com/ISMOUSLIH",
-                    "https://www.linkedin.com/in/ismailmouslih"
-                  ]
-                })
-              }} />
+              <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "CreativeWork",
+                    name: project.title,
+                    description: project.p_description,
+                    url: project.demoUrl || "https://ismailmouslih.vercel.app",
+                    image: `https://ismailmouslih.vercel.app${project.image}`,
+                    inLanguage: "en",
+                    creator: {
+                      "@type": "Person",
+                      name: "Ismail Mouslih",
+                    },
+                    keywords: project.tags.join(", "),
+                    sameAs: [
+                      "https://github.com/ISMOUSLIH",
+                      "https://www.linkedin.com/in/ismailmouslih",
+                    ],
+                  }),
+                }}
+              />
             </div>
           ))}
         </div>
@@ -117,5 +122,5 @@ export const ProjectsSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
